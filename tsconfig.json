@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist",
+    "module": "esnext",
+    "target": "es5",
+    "lib": ["es6", "dom", "dom.iterable", "es2020"],
+    "sourceMap": true,
+    "allowJs": true,
+    "jsx": "react",
+    "skipLibCheck": true,
+    "moduleResolution": "node",
+    "noImplicitReturns": false,
+    "noImplicitThis": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "downlevelIteration": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": "./",
+    "rootDir": "./",
+    "typeRoots": ["./src/@types"],
+    "paths": {
+      "@src/*": ["src/*"]
+    },
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "importsNotUsedAsValues": "preserve",
+    "resolveJsonModule": true
+  },
+  "include": ["./src"],
+  "exclude": [
+    "node_modules",
+    "webpack",
+    "src/**/__tests__/*",
+    "**/templates/**"
+  ]
+}

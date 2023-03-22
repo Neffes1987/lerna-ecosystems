@@ -1,0 +1,30 @@
+{
+  "name": "@components/lerna-scripts",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Tooling для автоматизации разработки",
+  "bin": {
+    "lerna-scripts": "bin/lerna-scripts.js"
+  },
+  "scripts": {
+    "prepublishOnly": "echo noop",
+    "clean": "lerna-scripts clean"
+  },
+  "peerDependencies": {
+    "@testing-library/user-event": "*"
+  },
+  "dependencies": {
+    "cross-spawn": "^6.0.5",
+    "react-dev-utils": "^8.0.0",
+    "webpack": "*"
+  },
+  "devDependencies": {
+    "@testing-library/user-event": "^12.6.0",
+    "@types/fs-extra": "^9.0.1",
+    "@types/globby": "^9.1.0",
+    "@types/klaw-sync": "^6.0.0",
+    "@types/react-dev-utils": "^9.0.4",
+    "ts-node": "^8.6.2"
+  },
+  "files": ["bin"]
+}

@@ -1,0 +1,21 @@
+{
+  "npmClient": "yarn",
+  "useWorkspaces": true,
+  "scope": ["@components/*"],
+  "rejectCycles": true,
+  "command": {
+    "publish": {
+      "ignoreChanges": [
+        "**/__tests__/**",
+        "**/*.md",
+        "**/__mocks__/**",
+        "**/*.stories.{ts,tsx,js}",
+        "**/stories/**",
+        "**/.storybook/**"
+      ],
+      "conventionalCommits": true,
+      "yes": true
+    }
+  },
+  "version": "independent"
+}

@@ -1,0 +1,9 @@
+{
+  "extends": "../../../tsconfig.json",
+  "compilerOptions": {
+    "rootDir": "./src",
+    "baseUrl": "./src"
+  },
+  "include": ["src", "@types"],
+  "exclude": ["*.stories.*", "node_modules"]
+}
